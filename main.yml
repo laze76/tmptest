@@ -1,0 +1,7 @@
+---
+- name: Git integration test
+  hosts: localhost
+  tasks:
+          - name: Create a file called 'testfile.txt'.
+            copy: content="hello world version 2\n" dest=testfile.txt
+
